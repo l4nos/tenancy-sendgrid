@@ -1,0 +1,41 @@
+{
+    "name": "lanos/laravel-sendgrid-tenancy",
+    "description": "Adds Sendgrid Domain Authentication / Email senders to Tenant Models",
+	"keywords": ["laravel", "tenancy", "sendgrid-tenancy"],
+    "type": "library",
+    "require": {
+        "laravel/framework": "^9.4.1",
+        "illuminate/console": "^8.37|^9.0",
+        "illuminate/contracts": "^8.37|^9.0",
+        "illuminate/database": "^8.37|^9.0",
+        "illuminate/http": "^8.37|^9.0",
+        "illuminate/log": "^8.37|^9.0",
+        "illuminate/notifications": "^8.37|^9.0",
+        "illuminate/routing": "^8.37|^9.0",
+        "illuminate/support": "^8.37|^9.0",
+        "illuminate/view": "^8.37|^9.0",
+        "sendgrid/sendgrid": "^7.11",
+        "stancl/tenancy": "^3.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Lane",
+            "email": "rob@updev.agency"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lanos\\SendgridTenancy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lanos\\SendgridTenancy\\SendgridTenancyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
